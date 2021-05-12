@@ -43,6 +43,7 @@ public class Movimiento {
     return !esDeposito;
   }
 
+  // En este caso se puede observar un Duplicated Code con el metodo agregar movimiento en Cuenta
   public void agregateA(Cuenta cuenta) {
     cuenta.setSaldo(calcularValor(cuenta));
     cuenta.agregarMovimiento(fecha, monto, esDeposito);
